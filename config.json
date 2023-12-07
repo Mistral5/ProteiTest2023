@@ -1,0 +1,24 @@
+{
+  "settings": {
+    "server": {
+      "port": 25000,
+      "phone_num_format": "^((\\+7|7|8)+([0-9]){10})$",
+      "operators_num": 4,
+      "call_duration_min": 5000, // milliseconds
+      "call_duration_max": 6000 // milliseconds
+    },
+    "queue": {
+      "queue_size": 100,
+      "rmin": 2000, // milliseconds
+      "rmax": 3000 // milliseconds
+    },
+    "logger": {
+      "logger_name": "logger",
+      "log_level": "info",
+      "log_file_name": "logs/log.txt",
+      "cdr_file_name": "cdr/cdr.txt",
+      "rotation_max_file_size": 128, // kbytes
+      "rotation_max_files": 10
+    }
+  }
+} 
